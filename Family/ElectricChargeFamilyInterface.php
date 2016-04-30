@@ -12,6 +12,12 @@ namespace Akeneo\Bundle\MeasureBundle\Family;
 class ElectricChargeFamilyInterface
 {
     /**
+     * Family measure name
+     * @staticvar string
+     */
+    const FAMILY = 'Electric charge';
+    
+    /**
      * @staticvar string
      */
     const AMPEREHOUR = 'AMPEREHOUR';
