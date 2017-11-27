@@ -104,6 +104,12 @@ measures_config:
     Length:
         standard: METER
         units:
+            NANOMETER:
+                convert: [{'div': 1000000000}]
+                symbol: nm
+            MICROMETER:
+                convert: [{'div': 1000000}]
+                symbol: µm
             MILLIMETER:
                 convert: [{'mul': 0.001}]
                 symbol: mm
@@ -314,6 +320,9 @@ measures_config:
             DAY:
                 convert: [{'mul': 86400}]
                 symbol: d
+            YEAR:
+                convert: [{'mul': 86400}, {'mul': 365}]
+                symbol: y
     Temperature:
         standard: KELVIN
         units:
@@ -443,3 +452,214 @@ measures_config:
             MMHG:
                 convert: [{'mul': 750.06375541921}]
                 symbol: mmHg
+    Brightness:
+        standard: LUMEN
+        units:
+            MILLILUMEN:
+                convert: [{'div': 1000}]
+                symbol: mlm
+            LUMEN:
+                convert: [{'mul': 1}]
+                symbol: lm
+            KILOLUMEN:
+                convert: [{'div': 0.001}]
+                symbol: klm
+
+    Luminance:
+        standard: CANDELA_PER_SQUARE_METER
+        units:
+            CANDELA_PER_SQUARE_METER:
+                convert: [{'mul': 1}]
+                symbol: cd/m²
+            CANDELA_PER_SQUARE_DECIMETER:
+                convert: [{'div': 0.01}]
+                symbol: cd/dm²
+            CANDELA_PER_SQUARE_CENTIMETER:
+                convert: [{'div': 0.001}]
+                symbol: cd/cm²
+
+    Flow:
+        standard: CUBIC_METER_PER_SECOND
+        units:
+            CUBIC_METER_PER_SECOND:
+                convert: [{'mul': 1}]
+                symbol: m³/s
+            CUBIC_METER_PER_MINUTE:
+                convert: [{'div': 60}]
+                symbol: m³/m
+            CUBIC_METER_PER_HOUR:
+                convert: [{'div': 3600}]
+                symbol: m³/h
+            CUBIC_DECIMETER_PER_SECOND:
+                convert: [{'div': 1000}]
+                symbol: dm³/s
+            CUBIC_DECIMETER_PER_MINUTE:
+                convert: [{'div': 60000}]
+                symbol: dm³/m
+            CUBIC_DECIMETER_PER_HOUR:
+                convert: [{'div': 3600000}]
+                symbol: dm³/h
+            CUBIC_CENTIMETER_PER_SECOND:
+                convert: [{'div': 1000000}]
+                symbol: m³/s
+            CUBIC_CENTIMETER_PER_MINUTE:
+                convert: [{'div': 60000000}]
+                symbol: m³/m
+            CUBIC_CENTIMETER_PER_HOUR:
+                convert: [{'div': 3600000000}]
+                symbol: m³/h
+            CUBIC_FOOT_PER_SECOND:
+                convert: [{'div': 35.3146667215}]
+                symbol: cfs
+            CUBIC_FOOT_PER_MINUTE:
+                convert: [{'div': 2118.8800032893}]
+                symbol: cfm
+            CUBIC_FOOT_PER_HOUR:
+                convert: [{'div': 127132.80019736}]
+                symbol: cfh
+            LITRE_PER_SECOND:
+                convert: [{'div': 1000}]
+                symbol: l/s
+            LITRE_PER_MINUTE:
+                convert: [{'div': 60000}]
+                symbol: l/m
+            LITRE_PER_HOUR:
+                convert: [{'div': 3600000}]
+                symbol: l/h
+
+    Angle:
+        standard: DEGREE_ANGEL
+        units:
+            DEGREE_ANGEL:
+                convert: [{'mul': 1}]
+                symbol: °
+
+    ScanPrintResolution:
+        standard: DOTS_PER_INCH
+        units:
+            DOTS_PER_INCH:
+                convert: [{'mul': 1}]
+                symbol: dpi
+            DOTS_PER_CENTIMETER:
+                convert: [{'div': 0.3937}]
+                symbol: dpcm
+
+    Framerate:
+        standard: FRAMES_PER_SECOND
+        units:
+            FRAMES_PER_SECOND:
+                convert: [{'mul': 1}]
+                symbol: fps
+
+    DateTransferRate:
+        standard: MEGABYTE_PER_SECOND
+        units:
+            BITS_PER_SECOND:
+                convert: [{'div': 8000000}]
+                symbol: Bit/s
+            KILOBIT_PER_SECOND:
+                convert: [{'div': 8000}]
+                symbol: kBit/s
+            MEGABIT_PER_SECOND:
+                convert: [{'div': 8}]
+                symbol: MBit/s
+            GIGABIT_PER_SECOND:
+                convert: [{'div': 0.008}]
+                symbol: GBit/s
+            BYTE_PER_SECOND:
+                convert: [{'div': 1000000}]
+                symbol: Byte/s
+            KILOBYTE_PER_SECOND:
+                convert: [{'div': 1000}]
+                symbol: kByte/s
+            MEGABYTE_PER_SECOND:
+                convert: [{'mul': 1}]
+                symbol: MByte/s
+            GIGABYTE_PER_SECOND:
+                convert: [{'div': 0.001}]
+                symbol: Byte/s
+
+    Grammage:
+        standard: GRAM_PER_SQUARE_METER
+        units:
+            GRAM_PER_SQUARE_METER:
+                convert: [{'mul': 1}]
+                symbol: g/m²
+            GRAM_PER_SQUARE_DECIMETER:
+                convert: [{'div': 0.01}]
+                symbol: g/dm²
+            GRAM_PER_SQUARE_CENTIMETER:
+                convert: [{'div': 0.0001}]
+                symbol: g/cm²
+
+    PrintResolution:
+        standard: LINES_PER_INCH
+        units:
+            LINES_PER_INCH:
+                convert: [{'mul': 1}]
+                symbol: lpi
+
+    Resolution:
+        standard: PIXEL
+        units:
+            PIXEL:
+                convert: [{'mul': 1}]
+                symbol: px
+            MEGAPIXEL:
+                convert: [{'div': 1000000}]
+                symbol: mpx
+            KILOPIXEL:
+                convert: [{'div': 1000}]
+                symbol: kpx
+
+    Torque:
+        standard: NEWTONMETER
+        units:
+            NEWTONMETER:
+                convert: [{'mul': 1}]
+                symbol: Nm
+            MILLINEWTONMETER:
+                convert: [{'div': 1000}]
+                symbol: mNm
+            KILOMETER:
+                convert: [{'div': 0.001}]
+                symbol: kNm
+
+    ElectricalCapacity:
+        standard: MIKROFARAD
+        units:
+            MIKROFARAD:
+                convert: [{'mul': 1}]
+                symbol: µF
+            NANOFARAD:
+                convert: [{'div': 1000}]
+                symbol: nF
+            PIKOFARAD:
+                convert: [{'mul': 1000000}]
+                symbol: pF
+            MILLIFARAD:
+                convert: [{'div': 0.001}]
+                symbol: mF
+            FARAD:
+                convert: [{'div': 0.000001}]
+                symbol: F
+
+    PrintSpeed:
+        standard: PAGES_PER_HOUR
+        units:
+            PAGES_PER_HOUR:
+                convert: [{'mul': 1}]
+                symbol: pph
+            PAGES_PER_MINUTE:
+                convert: [{'div': 60}]
+                symbol: ppm
+
+    Rotation:
+        standard: ROUNDS_PER_MINUTE
+        units:
+            ROUNDS_PER_HOUR:
+                convert: [{'mul': 60}]
+                symbol: rph
+            ROUNDS_PER_MINUTE:
+                convert: [{'mul': 1}]
+                symbol: rpm

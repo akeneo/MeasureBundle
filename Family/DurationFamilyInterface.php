@@ -41,4 +41,9 @@ interface DurationFamilyInterface
      * @staticvar string
      */
     const DAY = 'DAY';
+
+    /**
+     * @staticvar string
+     */
+    const YEAR = 'YEAR';
 }
