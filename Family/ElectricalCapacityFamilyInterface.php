@@ -19,7 +19,7 @@ interface ElectricalCapacityFamilyInterface
     /**
      * @staticvar string
      */
-    const MIKROFARAD = 'MIKROFARAD';
+    const MICROFARAD = 'MICROFARAD';
 
     /**
      * @staticvar string
@@ -29,7 +29,7 @@ interface ElectricalCapacityFamilyInterface
     /**
      * @staticvar string
      */
-    const PIKOFARAD = 'PIKOFARAD';
+    const PICOFARAD = 'PICOFARAD';
 
     /**
      * @staticvar string

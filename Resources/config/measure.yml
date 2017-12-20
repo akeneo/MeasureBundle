@@ -510,13 +510,13 @@ measures_config:
                 symbol: m³/h
             CUBIC_FOOT_PER_SECOND:
                 convert: [{'div': 35.3146667215}]
-                symbol: cfs
+                symbol: cf/s
             CUBIC_FOOT_PER_MINUTE:
                 convert: [{'div': 2118.8800032893}]
-                symbol: cfm
+                symbol: cf/m
             CUBIC_FOOT_PER_HOUR:
                 convert: [{'div': 127132.80019736}]
-                symbol: cfh
+                symbol: cf/h
             LITRE_PER_SECOND:
                 convert: [{'div': 1000}]
                 symbol: l/s
@@ -577,7 +577,7 @@ measures_config:
                 symbol: MByte/s
             GIGABYTE_PER_SECOND:
                 convert: [{'div': 0.001}]
-                symbol: Byte/s
+                symbol: GByte/s
 
     Grammage:
         standard: GRAM_PER_SQUARE_METER
@@ -628,13 +628,13 @@ measures_config:
     ElectricalCapacity:
         standard: MIKROFARAD
         units:
-            MIKROFARAD:
+            MICROFARAD:
                 convert: [{'mul': 1}]
                 symbol: µF
             NANOFARAD:
                 convert: [{'div': 1000}]
                 symbol: nF
-            PIKOFARAD:
+            PICOFARAD:
                 convert: [{'mul': 1000000}]
                 symbol: pF
             MILLIFARAD:
