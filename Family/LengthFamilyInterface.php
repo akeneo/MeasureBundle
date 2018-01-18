@@ -86,4 +86,14 @@ interface LengthFamilyInterface
      * @staticvar string
      */
     const YARD       = 'YARD';
+
+    /**
+     * @staticvar string
+     */
+    const NANOMETER  = 'NANOMETER';
+
+    /**
+     * @staticvar string
+     */
+    const MICROMETER = 'MICROMETER';
 }
