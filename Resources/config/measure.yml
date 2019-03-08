@@ -443,3 +443,36 @@ measures_config:
             MMHG:
                 convert: [{'mul': 750.06375541921}]
                 symbol: mmHg
+    Lumen:
+        standard: LUM
+        units:
+            LUM:
+                convert: [{'mul': 1}]
+                Symbol: Lum
+    Angle:
+        standard: DEG
+        units:
+            DEG:
+                convert: [{'mul': 1}]
+                Symbol: Deg
+    Flow:
+        standard: LITTREHOUR
+        units:
+            LITTRESEC:
+                convert: [{'mul': 3600}]
+                symbol: L/sec
+            LITTREMIN:
+                convert: [{'mul': 60}]
+                symbol: L/min
+            LITTREHOUR:
+                convert: [{'mul': 1}]
+                symbol: L/hour
+            LITTREDAY:
+                convert: [{'mul': 0.41666666666666667}]
+                symbol: L/day
+     Horsepower:
+        standard: HP
+        units:
+            HP:
+                convert: [{'mul': 1}]
+                Symbol: Hp         
